@@ -1,0 +1,40 @@
+title: BioCypher adapter for Monarch
+
+gene:
+  # https://biolink.github.io/biolink-model/docs/Gene.html
+  represented_as: node
+  #preferred_id: name
+  label_in_input: gene
+  properties:
+    name: str
+    in_taxon: str
+  edges:
+    in_taxon: organism taxon # type currently only informative, no check takes place
+
+phenotypic feature:
+  # https://biolink.github.io/biolink-model/docs/PhenotypicFeature.html
+  represented_as: node
+  #preferred_id: name
+  label_in_input: phenotype
+  properties:
+    name: str
+
+organism taxon:   
+  # https://biolink.github.io/biolink-model/docs/Gene.html 
+  represented_as: node
+  label_in_input: taxon
+  properties:
+    name: str
+
+gene to phenotypic feature association:
+  # https://biolink.github.io/biolink-model/docs/GeneToPhenotypicFeatureAssociation.html
+  represented_as: edge
+  source: gene       # entry currently only informative, no check takes place
+  target: phenotype  # entry currently only informative, no check takes place
+  label_in_input: gene to phenotype
+  properties:
+    has evidence: str
+    _evidence: str
+    publications: str
+    knowledge source: str
+    _qualifier: str

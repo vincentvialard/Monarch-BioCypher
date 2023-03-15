@@ -1,0 +1,6 @@
+.DS_Store
+.vscode
+biocypher-*
+__pychache__
+*.pyc
+*.prof

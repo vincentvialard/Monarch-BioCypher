@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "dzd_gmc"
+version = "0.1.0"
+description = "DZD GMC BioCypher adapter"
+authors = ["Vincent Vialard <vialard@derivo.de>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+isort = "^5.10.1"
+
+# use the required feature branch of the fork
+biocypher = { git = "https://github.com/vincentvialard/BioCypher.git", branch = "nodes-with-edges" }
+
+# for official release
+# WARNING: CURRENTLY NOT COMPATIBLE!
+#biocypher = { git = "https://github.com/saezlab/BioCypher.git", branch = "main" }
+
+# for local development
+#biocypher = {path = "../BioCypher", develop = true} 
+
+snakeviz = "^2.1.1"
+bioregistry = "^0.6.9"
+
+[tool.poetry.dev-dependencies]
+
+[tool.isort]
+profile = "black"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
