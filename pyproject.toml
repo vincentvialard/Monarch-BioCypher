@@ -21,6 +21,7 @@ biocypher = { git = "https://github.com/vincentvialard/BioCypher.git", branch = 
 
 snakeviz = "^2.1.1"
 bioregistry = "^0.6.9"
+strenum = "^0.4.9"
 
 [tool.poetry.dev-dependencies]
 

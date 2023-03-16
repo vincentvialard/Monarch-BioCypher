@@ -4,3 +4,4 @@ biocypher-*
 __pychache__
 *.pyc
 *.prof
+*.tsv
