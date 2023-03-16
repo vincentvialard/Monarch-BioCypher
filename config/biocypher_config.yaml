@@ -6,7 +6,7 @@ biocypher:
   
 neo4j:
   database_name: 'monarch'
-  delimiter: "\t"
+  delimiter: '\t'
   array_delimiter: '|'
   quote_char: '"'
 
