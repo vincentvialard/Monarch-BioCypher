@@ -8,7 +8,7 @@ python-versions = "*"
 
 [[package]]
 name = "biocypher"
-version = "0.5.4"
+version = "0.5.6"
 description = "A unifying framework for biomedical research knowledge graphs"
 category = "main"
 optional = false
@@ -27,13 +27,13 @@ treelib = "^1.6.1"
 
 [package.source]
 type = "git"
-url = "https://github.com/saezlab/BioCypher.git"
-reference = "main"
-resolved_reference = "73d8e4d07e9577fe58f9d89af36384943effa004"
+url = "https://github.com/vincentvialard/BioCypher.git"
+reference = "nodes-with-edges"
+resolved_reference = "e98251f660574175671c034a3a2aaea03ee4f9e6"
 
 [[package]]
 name = "bioregistry"
-version = "0.6.97"
+version = "0.6.100"
 description = "Integrated registry of biological databases and nomenclatures"
 category = "main"
 optional = false
@@ -41,7 +41,7 @@ python-versions = ">=3.7"
 
 [package.dependencies]
 click = "*"
-curies = "*"
+curies = ">=0.5.0"
 more-click = ">=0.1.2"
 pydantic = "*"
 pystow = ">=0.1.13"
@@ -109,7 +109,7 @@ development = ["black", "flake8", "mypy", "pytest", "types-colorama"]
 
 [[package]]
 name = "curies"
-version = "0.4.5"
+version = "0.5.0"
 description = "Idiomatic conversion between URIs and compact URIs (CURIEs)."
 category = "main"
 optional = false
@@ -385,6 +385,19 @@ optional = false
 python-versions = "*"
 
 [[package]]
+name = "strenum"
+version = "0.4.9"
+description = "An Enum that inherits from str."
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.extras]
+docs = ["myst-parser[linkify]", "sphinx", "sphinx-rtd-theme"]
+release = ["twine"]
+test = ["pylint", "pytest", "pytest-black", "pytest-cov", "pytest-pylint"]
+
+[[package]]
 name = "stringcase"
 version = "1.2.0"
 description = "String case converter."
@@ -460,7 +473,7 @@ socks = ["PySocks (>=1.5.6,!=1.5.7,<2.0)"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "c4319e4f31c83d379856d76c9d9f70f2d581e886b4ea173a6bcbe96062cbf3da"
+content-hash = "42925a88458fc8cc38a2d3919e8b26726f5ecadc13003f7edb6e375697d40daa"
 
 [metadata.files]
 appdirs = [
@@ -469,8 +482,8 @@ appdirs = [
 ]
 biocypher = []
 bioregistry = [
-    {file = "bioregistry-0.6.97-py3-none-any.whl", hash = "sha256:505c81d575039165f140cafafd52efc4240b935929b426131e775b265c04168e"},
-    {file = "bioregistry-0.6.97.tar.gz", hash = "sha256:32a1ceb3459dd859fd3c962a4c3f36f7bfccf12a543696c5305aa04b3aae752e"},
+    {file = "bioregistry-0.6.100-py3-none-any.whl", hash = "sha256:8e496e1c758a41675360f30443fa61f8a5718883b25636de87159ac5b1182535"},
+    {file = "bioregistry-0.6.100.tar.gz", hash = "sha256:96ef4b24eaa972847b113df38c33b1c298eb76058dc3689f7d83c512ef7a4c0b"},
 ]
 certifi = [
     {file = "certifi-2022.12.7-py3-none-any.whl", hash = "sha256:4ad3232f5e926d6718ec31cfc1fcadfde020920e278684144551c91769c7bc18"},
@@ -566,8 +579,8 @@ colorlog = [
     {file = "colorlog-6.7.0.tar.gz", hash = "sha256:bd94bd21c1e13fac7bd3153f4bc3a7dc0eb0974b8bc2fdf1a989e474f6e582e5"},
 ]
 curies = [
-    {file = "curies-0.4.5-py3-none-any.whl", hash = "sha256:73281f6616ec47c8d46d842def7a2021416c9ac10f580f9116125abf4bd2f943"},
-    {file = "curies-0.4.5.tar.gz", hash = "sha256:c01626183b520db1b4af6a1fd41ee6d02462fea4ce54d8c5a528e5782268589c"},
+    {file = "curies-0.5.0-py3-none-any.whl", hash = "sha256:db61d4cabceab424f0ef6f5e2062e2a5a017dc73cab165e67e73676c18d8f900"},
+    {file = "curies-0.5.0.tar.gz", hash = "sha256:b8ca20a04741aa50c6428550307b615018694a5e79472fd294085011c1699892"},
 ]
 future = [
     {file = "future-0.18.3.tar.gz", hash = "sha256:34a17436ed1e96697a86f9de3d15a3b0be01d8bc8de9c1dffd59fb8234ed5307"},
@@ -721,6 +734,10 @@ snakeviz = [
 sortedcontainers = [
     {file = "sortedcontainers-2.4.0-py2.py3-none-any.whl", hash = "sha256:a163dcaede0f1c021485e957a39245190e74249897e2ae4b2aa38595db237ee0"},
     {file = "sortedcontainers-2.4.0.tar.gz", hash = "sha256:25caa5a06cc30b6b83d11423433f65d1f9d76c4c6a0c90e3379eaa43b9bfdb88"},
+]
+strenum = [
+    {file = "StrEnum-0.4.9-py3-none-any.whl", hash = "sha256:c3df653030837b8077b2eb929738283481f01b07c7ef73ab4db368449830cc46"},
+    {file = "StrEnum-0.4.9.tar.gz", hash = "sha256:1b15ccff9eb0e22e77b8f874366ea752754280adc9144e6e388705d14cc350e7"},
 ]
 stringcase = [
     {file = "stringcase-1.2.0.tar.gz", hash = "sha256:48a06980661908efe8d9d34eab2b6c13aefa2163b3ced26972902e3bdfd87008"},

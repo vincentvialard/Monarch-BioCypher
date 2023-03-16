@@ -5,7 +5,7 @@
 BioCypher - Monarch Gene/Phenotype adapter prototype
 """
 
-from enum import StrEnum
+from strenum import StrEnum
 
 class EnumWithValuesList(StrEnum):
     """
