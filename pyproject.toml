@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "dzd_gmc"
-version = "0.1.0"
-description = "DZD GMC BioCypher adapter"
+name = "monarch_biocypher"
+version = "0.2.0"
+description = "Monarch BioCypher adapter"
 authors = ["Vincent Vialard <vialard@derivo.de>"]
 license = "MIT"
 
