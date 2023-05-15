@@ -26,7 +26,7 @@ organism taxon:
   properties:
     name: str
 
-gene to phenotypic feature association:
+gene to disease or phenotypic feature association:
   # https://biolink.github.io/biolink-model/docs/GeneToPhenotypicFeatureAssociation.html
   represented_as: edge
   source: gene       # entry currently only informative, no check takes place
